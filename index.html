@@ -8,103 +8,102 @@
     />
 	<title>ExamHelper</title>
 	<style type="text/css">
-	.title{
-		text-align: center;
+		:root{
+			--bg-color:yellow;
+			--font-color:blue;
+		}
+		.title{
+			text-align: center;
 		}
 		body{
-	margin: 0;
-}
+			margin: 0;
+		}
 
-.img_container{
-	display:flex;
-	justify-content: center;
-	align-items: center;
-}
-.cards{
-	display:flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-around;
-}
+		.img_container{
+			display:flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.cards{
+			display:flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-around;
+		}
 
-.card{
-	color: white;
-    font-weight: bold;
-    font-size: 1rem;
-	height:auto;
-	margin: 2rem;
-	color: black;
-	background-color:white;
-	width: 450px;
-	padding:1rem;
-	border-radius: 10px;
-	box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-}
+		.card{
+			color: var(--font-color);
+		    font-weight: bold;
+		    font-size: 1rem;
+			height:auto;
+			margin: 2rem;
+			color: black;
+			background-color:var(--bg-color);
+			width: 450px;
+			padding:1rem;
+			border-radius: 10px;
+			box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+		}
 
-.card_head
-{
-	display: flex;
-	justify-content: center;
-	font-size: 1.3rem;
-	font-weight: bold;
-}
-.card_body{
-	display: flex;
-	flex-wrap:wrap;
-	justify-content: space-around;
-	align-items: center;
-	align-content: center;
-	padding: 1rem;
-}
-.card_footer{
-	text-align: center;
-}
-p,li{
-	margin: 0;
-	color: white;
-}
-li{
-	margin: 10px;
-}
-a{
-	color: white;
-}
-.card5{
-	background-color: rebeccapurple;
-    
-}
-.card6{
-	background-color:greenyellow;
-}
-/*  footer */
-footer {
-	    position: absolute;
-    width: 100%;
-    bottom: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  margin-top: 22px;
-}
+		.card_head
+		{
+			display: flex;
+			justify-content: center;
+			font-size: 1.3rem;
+			font-weight: bold;
+		}
+		.card_body{
+			display: flex;
+			flex-wrap:wrap;
+			justify-content: space-around;
+			align-items: center;
+			align-content: center;
+			padding: 1rem;
+		}
+		.card_footer{
+			text-align: center;
+		}
+		p,li{
+			margin: 0;
+			color: var(--font-color);
+		}
+		li{
+			margin: 10px;
+		}
+		a{
+			color: var(--font-color);
+		}
+		
+		/*  footer */
+		footer {
+			    position: absolute;
+		    width: 100%;
+		    bottom: 0;
+		  display: flex;
+		  flex-wrap: wrap;
+		  align-items: center;
+		  margin-top: 22px;
+		}
 
-.copyright {
-  width: 100%;
-  background-color: #1b00ff;
-  text-align: center;
-  color: white;
-  padding: 10px;
+		.copyright {
+		  width: 100%;
+		  background-color: var(--bg-color);
+		  text-align: center;
+		  color: var(--font-color);
+		  padding: 10px;
 
-}
-.copright p{
-	font-size: 2rem;
-	font-weight: bold;
-}
-/*  MOBILE  */
-@media (max-width:768px) {
-  /*    footer    */
-  .copyright {
-    font-size: 13px;
-  }
+		}
+		.copright p{
+			font-size: 2rem;
+			font-weight: bold;
+			color: var(--font-color);
+		}
+		/*  MOBILE  */
+		@media (max-width:768px) {
+		  /*    footer    */
+		  .copyright {
+		    font-size: 13px;
+		  }
 
 }
 </style>
