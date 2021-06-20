@@ -76,6 +76,11 @@ p{
 	text-align: center;
 	margin: 0;
 }
+.img_container{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
 .cards{
 	display:flex;
 	flex-wrap: wrap;
@@ -121,14 +126,25 @@ p{
 </style>
 </head>
 <body>
+		<div class="img_container">
+			<img src="./img/hero.jpg" width="150" height="150">
+	</div>
 		<h3 class="title">We are here to help you </h3>
+
 	<div class="cards">
 
+		<div class="card">
+			<div class="card_head"><p>5<sup>th</sup>  semester</p></div>
+			<ol>
+				<li ><a href="/compilerdesign">OOAD</a></li>
+			</ol>
+		</div>
 		<div class="card">
 			<div class="card_head"><p>6<sup>th</sup>  semester</p></div>
 			<ol>
 				<li ><a href="/compilerdesign">Compiler Design</a></li>
 			</ol>
+		</div>
 	</div>
 </body>
 </html>
